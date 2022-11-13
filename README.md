@@ -1,4 +1,4 @@
-# README
+# VIDEO-01
 
 Estudo sobre projeto Rails Scheduled Tweets
 
