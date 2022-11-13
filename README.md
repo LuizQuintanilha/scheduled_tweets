@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Estudo sobre projeto Rails Scheduled Tweets
 
-Things you may want to cover:
+link para sublime - https://www.sublimetext.com/3
 
-* Ruby version
+criação da página:
+rails new scheduled_tweets
+rails s (rails server)
+commmit e branch (video-01)
 
-* System dependencies
+Modelo MVC:
+Model - link com base de dades
+View - Visualização
+Controller - Controlar a ação
+Routes - Adiciona o método desejado doc ontroller
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Criação da página "about":
+- route
+- controller
+- view 
+- visualizar a página
+- trocar página root 
+- route (dois jeitos)
+  - controller 
+  - view
+  - visualizar página
+- push para git hub
