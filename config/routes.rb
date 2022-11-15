@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'about', to: 'about#index'
   #root to: 'main#index'
   get '', to: 'main#index'
+  get 'sign_up', to: 'registration#new'
+  post 'sign_up', to: 'registration#create'
   # Defines the root path route ("/")
   # root "articles#index"
 end

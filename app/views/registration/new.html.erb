@@ -1,0 +1,31 @@
+<h1>Cadastro de  Usuário</h1>
+
+<% if @user.errors.any? %>
+  <div class="alert alert-danger">
+    <% @user.errors.full_messages.each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+<% end %>
+
+<%= form_with model: @user, url: sign_up_path do |form| %>
+
+  <div class="mb-3">
+    <%= form.label :email  %>
+    <%= form.text_field :email, class:"form-control", placeholder:"Digite aqui seu e-mail" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :password  %>
+    <%= form.password_field :password, class:"form-control", placeholder:"Digite aqui sua senha" %>
+  </div>
+  
+  <div class="mb-3">
+    <%= form.label :password_confirmation  %>
+    <%= form.password_field :password_confirmation, class:"form-control", placeholder:"Confirme aqui sua senha" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit  "Criar usuário", class:"btn btn-primary" %>
+  </div>
+<% end %>
